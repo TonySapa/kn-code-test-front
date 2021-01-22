@@ -4,7 +4,7 @@ import React from 'react'
 const Filter = ({filterName, handleFilterChange}) => {
   return (
     <div>
-      find countries
+      Find a Country
       <input 
         value={filterName}
         onChange={handleFilterChange}

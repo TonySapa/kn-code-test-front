@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import Notification from './components/Notification'
-import LoginForm from './components/LoginForm'
+import SignInSide from './components/SignInSide'
+
 import CountriesMenu from './components/CountriesMenu'
 
 import storage from './utils/storage'
@@ -27,10 +28,10 @@ const App = () => {
   if ( !user ) {
     return (
       <div>
+        <SignInSide />
         <h2>Login to application</h2>
 
         <Notification />
-        <LoginForm />
       </div>
     )
   }
