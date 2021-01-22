@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import Notification from './components/Notification'
 import LoginForm from './components/LoginForm'
+import CountriesMenu from './components/CountriesMenu'
 
 import storage from './utils/storage'
 import { login, logout } from './reducers/user'
@@ -41,6 +42,7 @@ const App = () => {
       </span>
       <Notification />
       <h1>Hello World</h1>
+      <CountriesMenu />
     </>
   )
 }
