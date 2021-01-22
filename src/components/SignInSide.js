@@ -14,23 +14,9 @@ import Link from '@material-ui/core/Link'
 import Paper from '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import CustomImage from './../resources/images/casino1.jpg'
 import jackpot from './../resources/images/jackpot.svg'
-
-function Copyright() {
-  return (
-    <Typography variant='body2' color='textSecondary' align='center'>
-      {'Copyright © '}
-      <Link color='inherit' href='https://material-ui.com/'>
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  )
-}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -96,7 +82,7 @@ const SignInSide = () => {
       </Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <img src={jackpot} alt='jackpot' width='50%' />
+          <img src={jackpot} alt='jackpot' style={{ width: '25%', marginBottom: '50px' }} />
           <form className={classes.form} onSubmit={handleLogin} noValidate>
             <TextField
               variant='outlined'
@@ -151,7 +137,7 @@ const SignInSide = () => {
               </Grid>
             </Grid>
             <Box mt={5}>
-              <Copyright />
+              <h2>Mail: toni@mail.com | Password: password</h2>
             </Box>
           </form>
         </div>

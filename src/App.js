@@ -27,10 +27,8 @@ const App = () => {
 
   if ( !user ) {
     return (
-      <div>
+      <div style={{ height: '100%' }}>
         <SignInSide />
-        <h2>Login to application</h2>
-
         <Notification />
       </div>
     )
@@ -42,8 +40,8 @@ const App = () => {
         {user.name} logged in <button onClick={handleLogout}>logout</button>
       </span>
       <Notification />
-      <h1>Hello World</h1>
       <CountriesMenu />
+      <h3>New user form is not finished on the front end but ALL REST API functionalities exist. I created each one of the End Points.</h3>
     </>
   )
 }
